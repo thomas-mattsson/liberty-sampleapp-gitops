@@ -6,6 +6,7 @@ resources:
   - argo-role.yaml
   - argo-rolebinding.yaml
   - common.yaml
+  - liberty-operator.yaml
 
 patches:
   - target:
