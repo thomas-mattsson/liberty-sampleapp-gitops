@@ -4,3 +4,16 @@ kind: Kustomization
 resources:
 
   - common.yaml
+
+patches:
+  - target:
+      group: argoproj.io
+      kind: Application
+      labelSelector: group=applications
+    patch: |-
+      - op: add
+        path: /spec/source/repoURL
+        value: https://github.com/Nordic-MVP-GitOps-Repos/liberty-sampleapps-gitops.git
+      - op: add
+        path: /spec/source/targetRevision
+        value: HEAD
