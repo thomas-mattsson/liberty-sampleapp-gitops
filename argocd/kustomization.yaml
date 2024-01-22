@@ -6,8 +6,10 @@ resources:
   - argo-role.yaml
   - argo-rolebinding.yaml
   - common.yaml
+  - openshift-monitoring
   - liberty-operator.yaml
   - liberty-app.yaml
+
 
 patches:
   - target:
