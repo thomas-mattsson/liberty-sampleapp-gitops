@@ -18,6 +18,7 @@ rules:
       - monitoring.coreos.com
       - operator.ibm.com
       - jaegertracing.io
+      - apps.openliberty.io
       - apps
       - batch
       - ""
