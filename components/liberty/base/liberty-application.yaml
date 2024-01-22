@@ -2,7 +2,6 @@ apiVersion: apps.openliberty.io/v1
 kind: OpenLibertyApplication
 metadata:
   name: openliberty-app
-  namespace: openshift-operators
 spec:
   serviceAccount:
     mountToken: true

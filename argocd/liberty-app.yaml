@@ -9,11 +9,11 @@ metadata:
     argocd.argoproj.io/sync-wave: "50"
 spec:
   destination:
-    namespace: openshift-operators
+    namespace: liberty-sampleapp
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ./components/liberty/operator
+    path: ./components/liberty/base
   syncPolicy:
     automated:
       prune: true
