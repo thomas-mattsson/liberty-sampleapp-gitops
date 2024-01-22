@@ -1,0 +1,25 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: argo-role
+rules:
+  - verbs:
+      - '*'
+    apiGroups:
+      - cert-manager.io
+      - tekton.dev
+      - build.openshift.io
+      - image.openshift.io
+      - route.openshift.io
+      - triggers.tekton.dev
+      - autoscaling
+      - logging.openshift.io
+      - networking.k8s.io
+      - monitoring.coreos.com
+      - operator.ibm.com
+      - jaegertracing.io
+      - apps
+      - batch
+      - ""
+    resources:
+      - '*'

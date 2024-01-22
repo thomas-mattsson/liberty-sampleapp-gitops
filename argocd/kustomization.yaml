@@ -3,6 +3,8 @@ kind: Kustomization
 
 resources:
 
+  - argo-role.yaml
+  - argo-rolebinding.yaml
   - common.yaml
 
 patches:
