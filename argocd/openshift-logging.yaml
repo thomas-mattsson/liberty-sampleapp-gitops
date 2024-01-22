@@ -1,0 +1,41 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: openshift-logging
+  namespace: openshift-gitops
+  labels:
+    group: applications
+  annotations:
+    argocd.argoproj.io/sync-wave: "50"
+spec:
+  destination:
+    namespace: openshift-logging
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: ./components/openshift-logging/base
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: openshift-logging-operator
+  namespace: openshift-gitops
+  labels:
+    group: applications
+  annotations:
+    argocd.argoproj.io/sync-wave: "50"
+spec:
+  destination:
+    namespace: openshift-logging
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: ./components/openshift-logging/operator
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
