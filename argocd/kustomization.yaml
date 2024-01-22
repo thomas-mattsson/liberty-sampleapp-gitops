@@ -7,6 +7,7 @@ resources:
   - argo-rolebinding.yaml
   - common.yaml
   - openshift-monitoring.yaml
+  - openshift-logging.yaml
   - liberty-operator.yaml
   - liberty-app.yaml
 
