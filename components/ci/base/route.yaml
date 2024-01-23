@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: el-event-listener-m4kdv1
+  labels:
+    app.kubernetes.io/managed-by: EventListener
+    app.kubernetes.io/part-of: Triggers
+    eventlistener: event-listener-m4kdv1
+spec:
+  to:
+    kind: Service
+    name: el-event-listener-m4kdv1
+    weight: 100
+  port:
+    targetPort: http-listener
+  wildcardPolicy: None

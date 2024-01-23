@@ -4,4 +4,9 @@ kind: Kustomization
 resources:
   - pipeline.yaml
   - workspace-pvc.yaml
+  
+  - triggertemplate.yaml
+  - eventlistener.yaml
+  - route.yaml
+
   - https://api.hub.tekton.dev/v1/resource/tekton/task/gradle/0.4/raw
