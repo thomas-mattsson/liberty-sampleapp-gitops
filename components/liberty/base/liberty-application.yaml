@@ -9,4 +9,4 @@ spec:
     image-registry.openshift-image-registry.svc:5000/liberty-sampleapp/liberty-sampleapp:latest
   expose: true
   manageTLS: true
-  replicas: 2
+  replicas: 1
