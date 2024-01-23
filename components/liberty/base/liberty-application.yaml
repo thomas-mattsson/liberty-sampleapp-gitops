@@ -3,6 +3,9 @@ kind: OpenLibertyApplication
 metadata:
   name: openliberty-app
 spec:
+  env:
+    - name: WLP_LOGGING_CONSOLE_FORMAT
+      value: basic 
   serviceAccount:
     mountToken: true
   applicationImage: >-
