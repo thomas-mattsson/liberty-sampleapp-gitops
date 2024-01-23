@@ -5,7 +5,7 @@ metadata:
 spec:
   env:
     - name: WLP_LOGGING_CONSOLE_FORMAT
-      value: basic 
+      value: TBASIC 
   serviceAccount:
     mountToken: true
   applicationImage: >-
