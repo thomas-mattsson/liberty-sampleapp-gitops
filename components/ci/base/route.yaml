@@ -15,5 +15,5 @@ spec:
     targetPort: http-listener
   wildcardPolicy: None
   tls:
-    termination: passthrough
+    termination: edge
     insecureEdgeTerminationPolicy: Redirect
