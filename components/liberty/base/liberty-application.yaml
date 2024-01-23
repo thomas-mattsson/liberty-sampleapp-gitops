@@ -6,7 +6,7 @@ spec:
   serviceAccount:
     mountToken: true
   applicationImage: >-
-    icr.io/appcafe/open-liberty/samples/getting-started@sha256:b295be1aeefeae9f36b991a70dfd8ef615e3f4a849d6d6091cf51f55221e3c0d
+    image-registry.openshift-image-registry.svc:5000/liberty-sampleapp/liberty-sampleapp:latest
   expose: true
   manageTLS: true
   replicas: 2
