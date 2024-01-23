@@ -8,6 +8,7 @@ resources:
   - common.yaml
   - openshift-monitoring.yaml
   - openshift-logging.yaml
+  - openshift-pipelines.yaml
   - liberty-operator.yaml
   - liberty-app.yaml
 
