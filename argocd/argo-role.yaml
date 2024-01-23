@@ -19,6 +19,7 @@ rules:
       - operator.ibm.com
       - jaegertracing.io
       - apps.openliberty.io
+      - liberty.websphere.ibm.com
       - apps
       - batch
       - ""
