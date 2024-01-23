@@ -18,3 +18,11 @@ spec:
   replicas: 1
   serviceAccount:
     mountToken: true
+  volumeMounts:
+    - name: config-dropins
+      mountPath: /opt/ibm/wlp/usr/servers/defaultServer/configDropins/overrides/jvm.options
+      subPath: jvm.options
+  volumes:
+    - name: config-dropins
+      configMap:
+        name: config-dropins
