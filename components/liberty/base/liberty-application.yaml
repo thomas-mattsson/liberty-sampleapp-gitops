@@ -1,15 +1,20 @@
-apiVersion: apps.openliberty.io/v1
-kind: OpenLibertyApplication
+kind: WebSphereLibertyApplication
+apiVersion: liberty.websphere.ibm.com/v1
 metadata:
-  name: openliberty-app
+  name: websphereliberty-app-sample
+  namespace: liberty-sampleapp
 spec:
   env:
     - name: WLP_LOGGING_CONSOLE_FORMAT
       value: TBASIC 
-  serviceAccount:
-    mountToken: true
   applicationImage: >-
     image-registry.openshift-image-registry.svc:5000/liberty-sampleapp/liberty-sampleapp:latest
   expose: true
+  license:
+    accept: true
+    edition: IBM WebSphere Application Server
+    productEntitlementSource: Standalone
   manageTLS: true
   replicas: 1
+  serviceAccount:
+    mountToken: true
