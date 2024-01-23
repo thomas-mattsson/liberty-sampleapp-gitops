@@ -9,11 +9,10 @@ metadata:
     argocd.argoproj.io/sync-wave: "50"
 spec:
   destination:
-    namespace: cp4i
+    namespace: liberty-sampleapp
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/Nordic-MVP-GitOps-Repos/hypersonic-lightweight-cp4i.git
     path: ./components/ci/base
   syncPolicy:
     automated:
