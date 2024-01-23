@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - pipeline.yaml
-  - workspace.yaml
+  - workspace-pvc.yaml
   - https://api.hub.tekton.dev/v1/resource/tekton/task/gradle/0.4/raw
