@@ -1,9 +1,10 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: open-liberty-certified
+  name: ibm-websphere-liberty
 spec:
   channel: v1.3
-  name: open-liberty-certified
-  source: certified-operators
+  installPlanApproval: Automatic
+  name: ibm-websphere-liberty
+  source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
