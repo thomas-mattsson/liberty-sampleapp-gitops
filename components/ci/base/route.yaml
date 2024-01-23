@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: el-event-listener-m4kdv1
+  name: el-event-listener-route
   labels:
     app.kubernetes.io/managed-by: EventListener
     app.kubernetes.io/part-of: Triggers
@@ -9,7 +9,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: el-event-listener-m4kdv1
+    name: el-event-listener
     weight: 100
   port:
     targetPort: http-listener
