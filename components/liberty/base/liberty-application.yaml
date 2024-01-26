@@ -4,6 +4,8 @@ metadata:
   name: websphereliberty-app-sample
   namespace: liberty-sampleapp
 spec:
+  serviceability:
+    size: 5Gi
   env:
     - name: WLP_LOGGING_CONSOLE_FORMAT
       value: TBASIC 
