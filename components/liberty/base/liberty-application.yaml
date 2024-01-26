@@ -6,6 +6,7 @@ metadata:
 spec:
   serviceability:
     size: 5Gi
+    storageClassName: ocs-storagecluster-ceph-rbd
   env:
     - name: WLP_LOGGING_CONSOLE_FORMAT
       value: TBASIC 
