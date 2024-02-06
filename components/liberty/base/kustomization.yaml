@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - liberty-application.yaml
+  - noderport-service.yaml
