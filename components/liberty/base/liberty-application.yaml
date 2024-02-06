@@ -29,7 +29,7 @@ spec:
       value: TBASIC 
   applicationImage: >-
     image-registry.openshift-image-registry.svc:5000/liberty-sampleapp/liberty-sampleapp:latest
-  expose: true
+  #expose: true
   license:
     accept: true
     edition: IBM WebSphere Application Server
