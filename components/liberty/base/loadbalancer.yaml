@@ -5,7 +5,6 @@ metadata:
   annotations:
     service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: public
     service.kubernetes.io/ibm-load-balancer-cloud-provider-vlan: '3393448'
-    service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: ams03
 spec:
   type: LoadBalancer 
   selector:
