@@ -6,14 +6,14 @@ metadata:
 spec:
   service:
     type: ClusterIP
-      port: 9443
-      portName: https
-      targetPort: 9443
-      ports:
-        - port: 2809
-          name: iiop
-        - port: 9402
-          name: iiops
+    port: 9443
+    portName: https
+    targetPort: 9443
+    ports:
+      - port: 2809
+        name: iiop
+      - port: 9402
+        name: iiops
   #serviceability:
   #  size: 5Gi
   #  storageClassName: ocs-storagecluster-cephfs
