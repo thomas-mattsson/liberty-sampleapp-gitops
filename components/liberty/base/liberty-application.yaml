@@ -4,7 +4,7 @@ metadata:
   name: websphereliberty-app-sample
   namespace: liberty-sampleapp
 spec:
-    serviceability:
+  serviceability:
     size: 5Gi
     storageClassName: ocs-storagecluster-cephfs
   env:
