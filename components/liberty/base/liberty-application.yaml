@@ -4,6 +4,8 @@ metadata:
   name: websphereliberty-app-sample
   namespace: liberty-sampleapp
 spec:
+  networkPolicy:
+    disable: true
   service:
     type: ClusterIP
     port: 9443
