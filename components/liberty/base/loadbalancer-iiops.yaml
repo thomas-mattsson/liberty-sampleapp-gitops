@@ -9,6 +9,7 @@ spec:
   type: LoadBalancer 
   selector:
     app.kubernetes.io/instance: websphereliberty-app-sample
+  loadBalancerIP: 169.50.179.238
   ports:
     - protocol: TCP
       port: 9402
