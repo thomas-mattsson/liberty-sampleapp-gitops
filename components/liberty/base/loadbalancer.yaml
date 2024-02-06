@@ -1,0 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: iiop-loadbalancer
+  annotations:
+    service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: public
+    service.kubernetes.io/ibm-load-balancer-cloud-provider-vlan: '3393448'
+    service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: ams03
+spec:
+  type: LoadBalancer 
+  selector:
+    app.kubernetes.io/instance: websphereliberty-app-sample
+  ports:
+    - protocol: TCP
+      port: 2809
+      targetPort: 2809
