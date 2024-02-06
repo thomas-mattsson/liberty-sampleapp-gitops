@@ -11,5 +11,5 @@ spec:
     app.kubernetes.io/instance: websphereliberty-app-sample
   ports:
     - protocol: TCP
-      port: 9402
-      targetPort: 9402
+      port: 2809
+      targetPort: 2809
