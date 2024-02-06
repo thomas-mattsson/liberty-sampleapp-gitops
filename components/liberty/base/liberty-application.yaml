@@ -4,6 +4,16 @@ metadata:
   name: websphereliberty-app-sample
   namespace: liberty-sampleapp
 spec:
+  service:
+    type: ClusterIP
+      port: 9443
+      portName: https
+      targetPort: 9443
+      ports:
+        - port: 2809
+          name: iiop
+        - port: 9402
+          name: iiops
   #serviceability:
   #  size: 5Gi
   #  storageClassName: ocs-storagecluster-cephfs
