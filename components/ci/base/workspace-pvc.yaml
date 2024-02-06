@@ -8,5 +8,5 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  storageClassName: ocs-storagecluster-ceph-rbd
+  storageClassName: ibmc-file-gold-gid
   volumeMode: Filesystem
