@@ -4,9 +4,9 @@ metadata:
   name: websphereliberty-app-sample
   namespace: liberty-sampleapp
 spec:
-  serviceability:
-    size: 5Gi
-    storageClassName: ocs-storagecluster-cephfs
+  #serviceability:
+  #  size: 5Gi
+  #  storageClassName: ocs-storagecluster-cephfs
   env:
     - name: WLP_LOGGING_CONSOLE_FORMAT
       value: TBASIC 
