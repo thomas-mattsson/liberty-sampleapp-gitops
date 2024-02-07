@@ -13,3 +13,6 @@ spec:
     - protocol: TCP
       port: 2809
       targetPort: 2809
+    - protocol: TCP
+      port: 9402
+      targetPort: 9402
