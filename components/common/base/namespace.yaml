@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: liberty-sampleapp
+  name: liberty
   labels:
     clusterresourceoverrides.admission.autoscaling.openshift.io/enabled: "true"
 spec: {}

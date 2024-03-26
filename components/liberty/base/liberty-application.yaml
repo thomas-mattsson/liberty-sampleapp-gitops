@@ -2,7 +2,6 @@ kind: WebSphereLibertyApplication
 apiVersion: liberty.websphere.ibm.com/v1
 metadata:
   name: websphereliberty-app-sample
-  namespace: liberty-sampleapp
 spec:
   networkPolicy:
     disable: true
