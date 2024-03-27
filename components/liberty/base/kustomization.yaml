@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - liberty-application.yaml
-  - loadbalancer.yaml
+  #- loadbalancer.yaml
   #- loadbalancer-iiops.yaml
