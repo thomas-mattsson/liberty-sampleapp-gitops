@@ -66,7 +66,7 @@ spec:
     - name: buildah
       params:
         - name: IMAGE
-          value: 'image-registry.openshift-image-registry.svc:5000/liberty-sampleapp/liberty-sampleapp:latest'
+          value: 'image-registry.openshift-image-registry.svc:5000/liberty/liberty-sampleapp:latest'
         - name: BUILDER_IMAGE
           value: >-
             registry.redhat.io/rhel8/buildah@sha256:3c2ea396a114221575a4031d90d28c43563f7b96288374e0ba8b22de3ed97b5a
