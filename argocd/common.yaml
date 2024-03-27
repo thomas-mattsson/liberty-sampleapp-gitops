@@ -13,6 +13,8 @@ spec:
     server: https://kubernetes.default.svc
   project: liberty
   source:
+    repoURL: https://github.com/Nordic-MVP-GitOps-Repos/liberty-sampleapp-gitops.git
+    targetRevision: HEAD
     path: ./components/common/base
   syncPolicy:
     automated:
