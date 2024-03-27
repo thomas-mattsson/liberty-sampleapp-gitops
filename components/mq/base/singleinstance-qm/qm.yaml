@@ -63,3 +63,7 @@ spec:
             - ca.crt
   web:
     enabled: true
+    manualConfig:
+      secret:
+        name: mqwebuser-secret 
+
