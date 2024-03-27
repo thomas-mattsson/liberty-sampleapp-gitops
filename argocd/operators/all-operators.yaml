@@ -10,8 +10,8 @@ spec:
       elements:
         - name: liberty
           namespace: liberty
-        - name: mq
-          namespace: mq
+        #- name: mq
+        #  namespace: mq
         - name: openshift-logging
           namespace: openshift-logging
         - name: openshift-pipelines

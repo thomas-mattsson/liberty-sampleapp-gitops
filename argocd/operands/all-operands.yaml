@@ -11,9 +11,9 @@ spec:
         - name: liberty
           namespace: liberty
           sync-wave: "200"
-        - name: mq
-          namespace: mq
-          sync-wave: "200"
+        #- name: mq
+        #  namespace: mq
+        #  sync-wave: "200"
         - name: ci
           namespace: liberty
           sync-wave: "200"
