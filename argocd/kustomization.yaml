@@ -8,8 +8,8 @@ resources:
   - argo-project.yaml
   - common.yaml
   
-  - operators/all-operators.yaml
-  - operands/all-operands.yaml
+  - operators
+  - operands
 
 patches:
   - target:
