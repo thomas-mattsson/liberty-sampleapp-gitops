@@ -35,12 +35,12 @@ spec:
         class: PATCHED_BY_KUSTOMIZE
         size: 10Gi
       listeners:
-        #- name: plain
-        #  port: 9093
-        #  type: internal
-        #  tls: false
-        #  authentication:
-        #    type: scram-sha-512
+        - name: plain
+          port: 9093
+          type: internal
+          tls: false
+          authentication:
+            type: scram-sha-512
         - name: external
           type: route
           port: 9092
