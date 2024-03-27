@@ -25,6 +25,13 @@ spec:
           - Read
           - Write
       - resource:
+          type: topic
+          name: __schema_
+          patternType: prefix
+        operations: 
+          - Alter
+          - Read
+      - resource:
           type: group
           name: '*'
           patternType: literal

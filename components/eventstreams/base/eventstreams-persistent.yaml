@@ -16,6 +16,8 @@ spec:
     entityOperator:
       topicOperator: {}
     kafka:
+      authorization:
+        type: simple
       config:
         auto.create.topics.enable: false
         inter.broker.protocol.version: '3.3'
