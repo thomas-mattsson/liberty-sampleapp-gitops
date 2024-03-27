@@ -4,5 +4,5 @@ metadata:
   name: name-is-ignored
 spec:
   license:
-    use: NonProduction
+    use: Development
     license: L-AMRD-XH6P3Q
