@@ -34,14 +34,12 @@ spec:
         runAsNonRoot: true
     pod:
       metadata:
-        annotations:
-          #cloudpakId: c8b82d189e7545f0892db9ef2731b90d
+        annotations:        
           productVersion: 11.3.1
-          productID: 2a79e49111f44ec3acd89608e56138f5
-          #cloudpakName: IBM Cloud Pak for Integration
+          productID: 46c2d3697ae4406d9157c58de4b66dcc
           productChargedContainers: kafka-connect-connect
           productCloudpakRatio: '2:1'
-          productName: IBM Event Streams for Non Production
+          productName: IBM Event Automation Non-Production
           eventstreams.production.type: EventAutomationNonProduction
           productMetric: VIRTUAL_PROCESSOR_CORE
       imagePullSecrets: []
