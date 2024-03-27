@@ -1,0 +1,9 @@
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: sample-orders-topic
+  labels:
+    eventstreams.ibm.com/cluster: dev-scram
+spec:
+  replicas: 1
+  partitions: 1

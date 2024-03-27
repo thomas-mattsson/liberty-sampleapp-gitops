@@ -12,6 +12,8 @@ spec:
           namespace: liberty
         - name: mq
           namespace: mq
+        - name: evemtstreams
+          namespace: eventstreams
         - name: openshift-logging
           namespace: openshift-logging
         - name: openshift-pipelines
