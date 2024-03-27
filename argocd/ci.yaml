@@ -9,9 +9,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "50"
 spec:
   destination:
-    namespace: liberty-sampleapp
+    namespace: liberty
     server: https://kubernetes.default.svc
-  project: default
+  project: liberty
   source:
     path: ./components/ci/base
   syncPolicy:

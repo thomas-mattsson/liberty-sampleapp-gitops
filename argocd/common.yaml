@@ -11,7 +11,7 @@ spec:
   destination:
     namespace: liberty-sampleapp
     server: https://kubernetes.default.svc
-  project: default
+  project: liberty
   source:
     path: ./components/common/base
   syncPolicy:
