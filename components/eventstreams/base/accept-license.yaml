@@ -3,7 +3,7 @@
   value: true
 - op: replace
   path: /spec/license/license
-  value: L-VTPK-22YZPK
+  value: L-HRZF-DWHH7A
 - op: replace
   path: /spec/license/use
-  value: CloudPakForIntegrationNonProduction
+  value: EventAutomationNonProduction
