@@ -16,6 +16,8 @@ spec:
           namespace: openshift-logging
         - name: openshift-pipelines
           namespace: openshift-operators 
+        - name: openshift-cert-manager
+          namespace: cert-manager-operator 
   template:
     metadata:
       name: '{{name}}-operator'
