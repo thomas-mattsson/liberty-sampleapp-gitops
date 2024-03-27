@@ -9,6 +9,9 @@ spec:
         - name: liberty
           namespace: liberty
           sync-wave: "200"
+        - name: ci
+          namespace: liberty
+          sync-wave: "200"
         - name: openshift-monitoring
           namespace: openshift-monitoring
           sync-wave: "200"
