@@ -9,9 +9,9 @@ spec:
   authentication:
     passwordSecret:
       password: password
-      secretName: kafka-connect-credentials
+      secretName: kafka-connect-user
     type: scram-sha-512
-    username: kafka-connect-credentials
+    username: kafka-connect-user
   config:
     group.id: connect-cluster
     config.storage.replication.factor: 1

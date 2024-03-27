@@ -1,7 +1,7 @@
 apiVersion: eventstreams.ibm.com/v1beta2
 kind: KafkaUser
 metadata:
-  name: kafka-connect-credentials
+  name: kafka-connect-user
   labels:
     eventstreams.ibm.com/cluster: eventstreams
 spec:
