@@ -14,7 +14,7 @@ resources:
 patches:
   - target:
       group: argoproj.io
-      kind: Application
+      kind: ApplicationSet
       labelSelector: group=applications
     patch: |-
       - op: add
