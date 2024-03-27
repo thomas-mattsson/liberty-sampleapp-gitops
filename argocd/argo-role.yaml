@@ -23,5 +23,7 @@ rules:
       - apps
       - batch
       - ""
+
+      - mq.ibm.com
     resources:
       - '*'
