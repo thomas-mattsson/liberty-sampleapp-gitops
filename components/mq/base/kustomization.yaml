@@ -3,8 +3,6 @@ kind: Kustomization
 
 resources: 
 
-  - namespace.yaml
-
   - metrics
  
   # Resources for QM using a self signed cerver certificate.
