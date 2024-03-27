@@ -8,9 +8,5 @@ resources:
   # Resources for QM using a self signed cerver certificate.
   - native-ha-qm
 
-  - singleinstance-qm
-
   # Resources for QM using certificate from LetsEncrypt
   #- native-ha-qm-wellknowncerts
-
-#  - native-ha-qm-auth
