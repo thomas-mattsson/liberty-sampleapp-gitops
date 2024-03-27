@@ -18,10 +18,10 @@ patches:
       labelSelector: group=applications
     patch: |-
       - op: add
-        path: /spec/source/repoURL
+        path: /spec/template/spec/source/repoURL
         value: https://github.com/Nordic-MVP-GitOps-Repos/liberty-sampleapp-gitops.git
       - op: add
-        path: /spec/source/targetRevision
+        path: /spec/template/spec/source/targetRevision
         value: HEAD
   - target:
       group: argoproj.io
