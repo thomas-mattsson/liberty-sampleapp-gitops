@@ -5,7 +5,7 @@ resources:
 
   - argo-role.yaml
   - argo-rolebinding.yaml
-  - argo-project.yaml
+
   - common.yaml
   
   - operators
