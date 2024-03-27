@@ -2,7 +2,7 @@ apiVersion: eventstreams.ibm.com/v1beta2
 kind: EventStreams
 metadata:
   name: eventstreams
-  namespace: cp4i
+  namespace: eventstreams
 spec:
   strimziOverrides:
     kafka:
