@@ -13,7 +13,7 @@ spec:
   tasksMax: 1
   config:
     topic: sample-orders-topic
-    mq.queue.manager: SINGLEINSTANCEQM
+    mq.queue.manager: NATIVEHAQM
     mq.connection.name.list: native-ha-qm-ibm-mq.mq.svc(1414)
     mq.channel.name: HAQMCHL
     mq.queue: ORDERLOG
