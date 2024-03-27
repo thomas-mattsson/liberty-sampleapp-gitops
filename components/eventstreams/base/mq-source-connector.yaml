@@ -15,7 +15,7 @@ spec:
     topic: sample-orders-topic
     mq.queue.manager: NATIVEHAQM
     mq.connection.name.list: native-ha-qm-ibm-mq.mq.svc(1414)
-    mq.channel.name: HAQMCHL
+    mq.channel.name: KAFKA
     mq.queue: ORDERLOG
     key.converter: org.apache.kafka.connect.storage.StringConverter
     mq.message.body.jms: true
