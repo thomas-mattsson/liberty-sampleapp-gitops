@@ -14,7 +14,7 @@ spec:
   config:
     topic: sample-orders-topic
     mq.queue.manager: SINGLEINSTANCEQM
-    mq.connection.name.list: singleinstance-qm-ibm-mq.cp4i.svc(1414)
+    mq.connection.name.list: singleinstance-qm-ibm-mq.mq.svc(1414)
     mq.channel.name: SICHL
     mq.queue: ORDERLOG
     key.converter: org.apache.kafka.connect.storage.StringConverter
