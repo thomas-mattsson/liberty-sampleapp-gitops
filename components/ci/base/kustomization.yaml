@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - pipeline.yaml
-  - pipelinerun.yaml
   - workspace-pvc.yaml
   
   - triggertemplate.yaml
