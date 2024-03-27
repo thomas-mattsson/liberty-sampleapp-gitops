@@ -11,15 +11,6 @@ resources:
   - operators/all-operators.yaml
   - operands/all-operands.yaml
 
-
-  - openshift-monitoring.yaml
-  - openshift-logging.yaml
-  - openshift-pipelines.yaml
-  - ci.yaml
-  - liberty-operator.yaml
-  - liberty-app.yaml
-
-
 patches:
   - target:
       group: argoproj.io
