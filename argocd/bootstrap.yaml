@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: liberty
+  project: default
   source:
     path: ./argocd
     targetRevision: HEAD
