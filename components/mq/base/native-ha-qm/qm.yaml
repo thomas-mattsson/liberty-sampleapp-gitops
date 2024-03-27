@@ -79,8 +79,8 @@ spec:
           items:
             - tls.crt
             - ca.crt
- # web:
- #   enabled: true
+  web:
+    enabled: true
     #manualConfig:
     #  secret:
     #    name: mqwebuser-secret 
