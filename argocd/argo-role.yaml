@@ -26,6 +26,6 @@ rules:
 
       - mq.ibm.com
 
-      - events.ibm.com
+      - eventstreams.ibm.com
     resources:
       - '*'
