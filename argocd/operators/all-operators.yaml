@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: liberty-operators
+spec:
+  generators:
+  - list:
+      elements:
+        - name: liberty
+          namespace: liberty
+        - name: openshift-logging
+          namespace: openshift-logging
+        - name: openshift-pipelines
+          namespace: openshift-operators 
+  template:
+    metadata:
+      name: '{{name}}-operator'
+      labels:
+        group: applications
+      annotations:
+        argocd.argoproj.io/sync-wave: "100"
+    spec:
+      project: liberty
+      source:
+        path: 'components/{{name}}/operator'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{namespace}}'
+      syncPolicy:
+        automated:
+          selfHeal: true
