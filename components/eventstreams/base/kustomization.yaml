@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 
   - eventstreams-persistent.yaml
+  - kafka-admin.yaml
   - kafka-connect.yaml
   - mq-source-connector.yaml
   - sample-orders-topic.yaml

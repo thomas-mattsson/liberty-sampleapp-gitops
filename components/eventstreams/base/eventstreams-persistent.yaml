@@ -50,7 +50,9 @@ spec:
         class: PATCHED_BY_KUSTOMIZE
         size: 10Gi
       replicas: 1
-  adminUI: {}
+  adminUI: 
+    authentication:
+      - type: scram-sha-512
   restProducer: {}
   apicurioRegistry: {}
   adminApi: {}
