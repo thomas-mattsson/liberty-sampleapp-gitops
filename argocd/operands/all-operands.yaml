@@ -20,6 +20,9 @@ spec:
         - name: ci
           namespace: liberty
           sync-wave: "200"
+        - name: reloader
+          namespace: mq
+          sync-wave: "200"
         - name: openshift-monitoring
           namespace: openshift-monitoring
           sync-wave: "200"
