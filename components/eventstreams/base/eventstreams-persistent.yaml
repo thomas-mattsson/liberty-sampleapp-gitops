@@ -34,9 +34,15 @@ spec:
         size: 10Gi
       listeners:
         - name: plain
-          port: 9092
+          port: 9093
           type: internal
           tls: false
+        - name: external
+          type: route
+          port: 9092
+          authentication:
+            type: scram-sha-512
+          tls: true
       replicas: 1
     zookeeper:
       metricsConfig:
