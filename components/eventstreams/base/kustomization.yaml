@@ -6,6 +6,7 @@ resources:
   - eventstreams-persistent.yaml
   - kafka-admin.yaml
   - kafka-connect.yaml
+  - kafka-connect-user.yaml
   - mq-source-connector.yaml
   - sample-orders-topic.yaml
   - sample-sink-topic.yaml
