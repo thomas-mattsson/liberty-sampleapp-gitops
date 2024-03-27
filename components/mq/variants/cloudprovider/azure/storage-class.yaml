@@ -1,0 +1,13 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: name-is-ignored
+spec:
+  queueManager:
+    storage:
+      queueManager:
+        class: managed-csi
+      persistedData:
+        class: managed-csi
+      recoveryLogs:
+        class: managed-csi
