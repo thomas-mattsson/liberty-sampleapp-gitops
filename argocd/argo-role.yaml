@@ -25,5 +25,7 @@ rules:
       - ""
 
       - mq.ibm.com
+
+      - events.ibm.com
     resources:
       - '*'
