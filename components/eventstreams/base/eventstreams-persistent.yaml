@@ -7,8 +7,8 @@ spec:
     internalTls: TLSv1.3
   license:
     accept: true
-    use: CloudPakForIntegrationNonProduction
-    license: L-YBXJ-ADJNSM
+    use: EventAutomationNonProduction
+    license: L-HRZF-DWHH7A
   requestIbmServices:
     iam: false
     monitoring: false

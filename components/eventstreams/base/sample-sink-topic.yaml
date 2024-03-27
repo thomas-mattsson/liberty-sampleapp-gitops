@@ -3,7 +3,7 @@ kind: KafkaTopic
 metadata:
   name: sample-sink-topic
   labels:
-    eventstreams.ibm.com/cluster: dev-scram
+    eventstreams.ibm.com/cluster: eventstreams
 spec:
   replicas: 1
   partitions: 1
