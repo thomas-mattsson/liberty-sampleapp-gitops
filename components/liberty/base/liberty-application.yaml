@@ -30,6 +30,7 @@ spec:
     productEntitlementSource: Standalone
   manageTLS: true
   replicas: 1
+  pullPolicy: Always
   serviceAccount:
     mountToken: true
 #  volumeMounts:
