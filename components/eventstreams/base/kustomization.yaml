@@ -8,7 +8,7 @@ resources:
   - kafka-connect.yaml
   - kafka-connect-user.yaml
   - mq-source-connector.yaml
-  #- sample-orders-topic.yaml
-  #- sample-sink-topic.yaml
+  - sample-orders-topic.yaml
+  - sample-sink-topic.yaml
   #- topics.yaml
   #- datagen.yaml
