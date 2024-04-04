@@ -52,7 +52,7 @@ spec:
           authentication:
             type: scram-sha-512
           tls: true
-      replicas: 3
+      replicas: 1
     zookeeper:
       metricsConfig:
         valueFrom:
