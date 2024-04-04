@@ -43,7 +43,7 @@ spec:
         - name: plain
           port: 9093
           type: internal
-          tls: true
+          tls: false
           authentication:
             type: scram-sha-512
         - name: external
