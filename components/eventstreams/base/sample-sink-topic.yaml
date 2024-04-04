@@ -1,9 +1,0 @@
-apiVersion: eventstreams.ibm.com/v1beta2
-kind: KafkaTopic
-metadata:
-  name: sample-sink-topic
-  labels:
-    eventstreams.ibm.com/cluster: eventstreams
-spec:
-  replicas: 1
-  partitions: 1
