@@ -12,5 +12,5 @@ spec:
     key.converter.schemas.enable: false
     value.converter: org.apache.kafka.connect.json.JsonConverter
     value.converter.schemas.enable: false
-    timings.ms.sensorreadings: 5000
-    timings.ms.badgeins: 500
+    timings.ms.sensorreadings: 27000
+    timings.ms.badgeins: 5000
