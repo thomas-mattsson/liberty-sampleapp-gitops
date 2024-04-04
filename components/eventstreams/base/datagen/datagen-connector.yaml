@@ -12,13 +12,6 @@ spec:
     key.converter.schemas.enable: false
     value.converter: org.apache.kafka.connect.json.JsonConverter
     value.converter.schemas.enable: false
+    
     timings.ms.sensorreadings: 27000
     timings.ms.badgeins: 5000
-
-    topic.name.badgeins: DOOR.BADGEIN
-
-    topic.name.orders: NULLTOPIC
-    topic.name.cancellations: NULLTOPIC
-    topic.name.stockmovements: NULLTOPIC
-    topic.name.newcustomers: NULLTOPIC
-    topic.name.sensorreadings: NULLTOPIC
