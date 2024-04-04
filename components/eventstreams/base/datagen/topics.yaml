@@ -187,3 +187,22 @@ spec:
   partitions: 1
   replicas: 1
   topicName: SENSOR.READINGS.AVRO
+
+
+---
+
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: null-topic
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '524288000'
+  partitions: 1
+  replicas: 1
+  topicName: NULLTOPIC
+
+---
