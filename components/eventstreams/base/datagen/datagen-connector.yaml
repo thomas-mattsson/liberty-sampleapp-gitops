@@ -16,9 +16,9 @@ spec:
     timings.ms.badgeins: 5000
 
     topic.name.badgeins: DOOR.BADGEIN
-    
+
     topic.name.orders: NULLTOPIC
     topic.name.cancellations: NULLTOPIC
     topic.name.stockmovements: NULLTOPIC
-    topic.name.newcustomers: NULLTOPIC.NEW
-    topic.name.sensorreadings: NULLTOPIC.READINGS
+    topic.name.newcustomers: NULLTOPIC
+    topic.name.sensorreadings: NULLTOPIC
