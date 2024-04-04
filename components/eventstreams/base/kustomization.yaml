@@ -11,4 +11,4 @@ resources:
   - sample-orders-topic.yaml
   - sample-sink-topic.yaml
   - topics.yaml
-  - datagen.yaml
+  #- datagen.yaml
