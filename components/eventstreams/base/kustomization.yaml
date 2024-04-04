@@ -10,5 +10,5 @@ resources:
   - mq-source-connector.yaml
   - sample-orders-topic.yaml
   - sample-sink-topic.yaml
-  - topics.yaml
+  #- topics.yaml
   #- datagen.yaml
