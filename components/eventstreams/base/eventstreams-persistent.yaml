@@ -3,6 +3,8 @@ kind: EventStreams
 metadata:
   name: eventstreams
   namespace: eventstreams
+  annotations:
+    eventstreams.ibm.com/apicurio-registry-version:'>=2.4'
 spec:
   security:
     internalTls: TLSv1.3
