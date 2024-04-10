@@ -15,8 +15,8 @@ spec:
   requestIbmServices:
     iam: false
     monitoring: false
-  externalCACertificates:
-    secretName: letsencrypt-chain
+ # externalCACertificates:
+ #   secretName: letsencrypt-chain
   strimziOverrides:
     #clusterCa:
     #  generateCertificateAuthority: false
