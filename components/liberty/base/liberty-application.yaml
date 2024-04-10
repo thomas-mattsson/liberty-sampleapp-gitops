@@ -3,6 +3,9 @@ apiVersion: liberty.websphere.ibm.com/v1
 metadata:
   name: websphereliberty-app-sample
 spec:
+  envFrom:
+   - secretRef:
+      name: eventstreams-scram-auth
   networkPolicy:
     disable: true
   service:
