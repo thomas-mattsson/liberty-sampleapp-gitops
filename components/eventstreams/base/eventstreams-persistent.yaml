@@ -18,6 +18,8 @@ spec:
   externalCACertificates:
     secretName: letsencrypt-chain
   strimziOverrides:
+    clusterCa:
+      generateCertificateAuthority: false
     entityOperator:
       topicOperator: {}
     kafka:
