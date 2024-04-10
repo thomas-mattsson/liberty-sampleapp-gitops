@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
 
+  - route-certificate.yaml
   - eventstreams-persistent.yaml
   - kafka-admin.yaml
 
