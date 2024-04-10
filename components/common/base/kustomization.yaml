@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - catalogsource.yaml
   - namespace.yaml
+  - letsencrypt-cluster-issuer.yaml
