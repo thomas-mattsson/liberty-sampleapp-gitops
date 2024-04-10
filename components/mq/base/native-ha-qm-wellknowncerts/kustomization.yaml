@@ -11,3 +11,4 @@ resources:
 
   - tls/mq-server-certificate.yaml
   - tls/letsencrypt-chain.yaml
+  
