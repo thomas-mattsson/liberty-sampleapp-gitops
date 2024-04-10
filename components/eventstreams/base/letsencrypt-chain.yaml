@@ -1,9 +1,11 @@
-kind: Secret
-apiVersion: v1
 # Letsencrypt root and intermediate certificates from https://letsencrypt.org/certificates/
 # https://letsencrypt.org/certs/isrgrootx1.pem
 # https://letsencrypt.org/certs/lets-encrypt-r3.pem
-
+#
+# See https://ibm.github.io/event-automation/es/installing/configuring/#providing-listener-certificates
+#
+kind: Secret
+apiVersion: v1
 metadata:
   name: letsencrypt-chain
 type: Opaque
