@@ -18,8 +18,8 @@ spec:
   externalCACertificates:
     secretName: letsencrypt-chain
   strimziOverrides:
-    clusterCa:
-      generateCertificateAuthority: false
+    #clusterCa:
+    #  generateCertificateAuthority: false
     entityOperator:
       topicOperator: {}
     kafka:
@@ -52,11 +52,11 @@ spec:
             type: scram-sha-512
         - name: external
           type: route
-          configuration:
-            brokerCertChainAndKey:
-              certificate: tls.crt
-              key: tls.key
-              secretName: es-route-certificate-secret
+          #configuration:
+          #  brokerCertChainAndKey:
+          #    certificate: tls.crt
+          #    key: tls.key
+          #    secretName: es-route-certificate-secret
           port: 9092
           authentication:
             type: scram-sha-512
