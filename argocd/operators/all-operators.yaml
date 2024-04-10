@@ -20,6 +20,8 @@ spec:
           namespace: openshift-operators 
         - name: openshift-cert-manager
           namespace: cert-manager-operator 
+        - name: cert-utils
+          namespace: cert-utils-operator 
   template:
     metadata:
       name: '{{name}}-operator'

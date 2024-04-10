@@ -48,6 +48,11 @@ spec:
             type: scram-sha-512
         - name: external
           type: route
+          #configuration:
+          #  brokerCertChainAndKey:
+          #    certificate: tls.crt
+          #    key: tls.key
+          #    secretName: default-cert-copy
           port: 9092
           authentication:
             type: scram-sha-512
