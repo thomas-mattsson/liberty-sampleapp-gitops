@@ -20,9 +20,8 @@ spec:
     topic.name.cancellations: NULLTOPIC
     topic.name.stockmovements: NULLTOPIC
     topic.name.badgeins: DOOR.BADGEIN
-    topic.name.newcustomers: NULLTOPICNEW
+    #topic.name.newcustomers: NULLTOPIC
     topic.name.sensorreadings: NULLTOPIC
-
 ---
 
 apiVersion: eventstreams.ibm.com/v1beta2
@@ -54,3 +53,19 @@ spec:
   partitions: 1
   replicas: 1
   topicName: NULLTOPIC
+
+---
+
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: fake-customers
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '524288000'
+  partitions: 1
+  replicas: 1
+  topicName: CUSTOMERS.NEW
