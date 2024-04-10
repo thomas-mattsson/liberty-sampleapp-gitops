@@ -5,3 +5,4 @@ resources:
   - catalogsource.yaml
   - namespace.yaml
   - letsencrypt-clusterissuer.yaml
+  - https://github.com/emberstack/kubernetes-reflector/releases/latest/download/reflector.yaml
