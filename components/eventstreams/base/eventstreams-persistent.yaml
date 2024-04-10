@@ -16,7 +16,7 @@ spec:
     iam: false
     monitoring: false
   externalCACertificates:
-    secretName: es-route-certificate-secret
+    secretName: letsencrypt-chain
   strimziOverrides:
     entityOperator:
       topicOperator: {}

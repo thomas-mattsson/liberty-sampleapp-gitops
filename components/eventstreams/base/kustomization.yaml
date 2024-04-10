@@ -4,6 +4,8 @@ kind: Kustomization
 resources:
 
   - route-certificate.yaml
+  - letsencrypt-chain.yaml
+  
   - eventstreams-persistent.yaml
   - kafka-admin.yaml
 
