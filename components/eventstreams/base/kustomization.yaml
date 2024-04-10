@@ -15,5 +15,5 @@ resources:
   - mq/mq-source-connector.yaml
   - mq/sample-orders-topic.yaml
 
-  - datagen/topics.yaml
+  #- datagen/topics.yaml
   - datagen/datagen-connector.yaml

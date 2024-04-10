@@ -15,3 +15,19 @@ spec:
     
     timings.ms.sensorreadings: 27000
     timings.ms.badgeins: 5000
+
+---
+
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: fake-badgeevents
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '524288000'
+  partitions: 1
+  replicas: 1
+  topicName: DOOR.BADGEIN
