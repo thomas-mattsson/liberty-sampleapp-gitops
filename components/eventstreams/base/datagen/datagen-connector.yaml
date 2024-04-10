@@ -13,8 +13,15 @@ spec:
     value.converter: org.apache.kafka.connect.json.JsonConverter
     value.converter.schemas.enable: false
     
-    timings.ms.sensorreadings: 27000
+    #timings.ms.sensorreadings: 27000
     timings.ms.badgeins: 5000
+
+    topic.name.orders: NULLTOPIC
+    topic.name.cancellations: NULLTOPIC
+    topic.name.stockmovements: NULLTOPIC
+    topic.name.badgeins: DOOR.BADGEIN
+    topic.name.newcustomers: NULLTOPICNEW
+    topic.name.sensorreadings: NULLTOPIC
 
 ---
 
@@ -31,3 +38,19 @@ spec:
   partitions: 1
   replicas: 1
   topicName: DOOR.BADGEIN
+
+---
+
+apiVersion: eventstreams.ibm.com/v1beta2
+kind: KafkaTopic
+metadata:
+  name: fake-nulltopic
+  labels:
+    eventstreams.ibm.com/cluster: eventstreams
+spec:
+  config:
+    min.insync.replicas: '1'
+    retention.bytes: '524288000'
+  partitions: 1
+  replicas: 1
+  topicName: NULLTOPIC
