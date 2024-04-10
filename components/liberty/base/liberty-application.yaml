@@ -5,6 +5,8 @@ metadata:
 spec:
   envFrom:
    - secretRef:
+      # Should be manually created in the cluster (or via vault). Key should be MP_MESSAGING_CONNECTOR_LIBERTY_KAFKA_SASL_JAAS_CONFIG
+      # and value org.apache.kafka.common.security.scram.ScramLoginModule required username="<username>" password="<password>";
       name: eventstreams-scram-auth
   networkPolicy:
     disable: true
