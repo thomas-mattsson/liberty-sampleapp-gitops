@@ -24,6 +24,7 @@ spec:
     - client auth
   dnsNames:
     - 'native-ha-qm-ibm-mq-qm-mq.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com'
+    - 'native-ha-qm-ibm-mq-web-mq.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com'
   issuerRef:
     name: letsencrypt-cluster-issuer
     kind: ClusterIssuer
