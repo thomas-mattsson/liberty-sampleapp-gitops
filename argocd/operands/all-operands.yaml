@@ -17,9 +17,6 @@ spec:
         - name: eventstreams
           namespace: eventstreams
           sync-wave: "200"
-        - name: ci
-          namespace: liberty
-          sync-wave: "200"
         - name: reloader
           namespace: mq
           sync-wave: "200"
