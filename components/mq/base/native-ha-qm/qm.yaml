@@ -73,7 +73,7 @@ spec:
             - tls.key
             - tls.crt
     trust:
-      - name: trust
+      - name: lec-trust
         secret:
           secretName: letsencrypt-chain
           items:
