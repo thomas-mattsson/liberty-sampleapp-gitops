@@ -68,16 +68,15 @@ spec:
     keys:
       - name: default
         secret:
-          secretName: mq-external-tls-secret
+          secretName: mq-server-certificate
           items:
             - tls.key
             - tls.crt
     trust:
       - name: trust
         secret:
-          secretName: mq-external-tls-secret
+          secretName: letsencrypt-chain
           items:
-            - tls.crt
             - ca.crt
   web:
     enabled: true
