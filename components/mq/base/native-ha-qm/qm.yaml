@@ -68,7 +68,7 @@ spec:
     keys:
       - name: default
         secret:
-          secretName: mq-server-certificate
+          secretName: mq-server-certificate-secret
           items:
             - tls.key
             - tls.crt
