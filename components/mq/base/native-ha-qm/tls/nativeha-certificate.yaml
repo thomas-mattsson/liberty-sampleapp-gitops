@@ -23,8 +23,8 @@ spec:
     - server auth
     - client auth
   dnsNames:
-    - '*.cp4i.svc'
-    - '*.cp4i.svc.local'
-    - '*.cp4i.svc.local.cluster'
+    - '*.mq.svc'
+    - '*.mq.svc.local'
+    - '*.mq.svc.local.cluster'
   issuerRef:
     name: mq-selfsigned-issuer
