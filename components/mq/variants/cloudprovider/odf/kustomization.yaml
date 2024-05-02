@@ -4,11 +4,3 @@ kind: Component
 patches:
   - path: storage-class.yaml
   - path: mq-cert-domain.yaml
-
-  #- target:
-  #    kind: QueueManager
-  #  path: storage-class.yaml
-  #- target:
-  #    kind: Certificate
-  #    name: mq-server-certificate
-  #  path: mq-cert-domain.yaml
