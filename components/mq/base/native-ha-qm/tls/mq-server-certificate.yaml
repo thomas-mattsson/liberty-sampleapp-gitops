@@ -22,9 +22,7 @@ spec:
     - digital signature
     - server auth
     - client auth
-  dnsNames:
-    - 'native-ha-qm-ibm-mq-qm-mq.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com'
-    - 'native-ha-qm-ibm-mq-web-mq.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com'
+  dnsNames: PATCHED_BY_KUSTOMIZE
   issuerRef:
     name: letsencrypt-cluster-issuer
     kind: ClusterIssuer
