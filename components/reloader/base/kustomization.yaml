@@ -7,7 +7,7 @@ resources:
 
 namespace: mq
 
-patchesJson6902:
+patches:
 - target:
     version: v1
     kind: Deployment
