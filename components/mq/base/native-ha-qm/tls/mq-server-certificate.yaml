@@ -22,7 +22,6 @@ spec:
     - digital signature
     - server auth
     - client auth
-  dnsNames: PATCHED_BY_KUSTOMIZE
   issuerRef:
     name: letsencrypt-cluster-issuer
     kind: ClusterIssuer
