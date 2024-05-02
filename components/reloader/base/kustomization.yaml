@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
 
-  - https://github.com/stakater/Reloader/deployments/kubernetes
+  - https://github.com/stakater/Reloader/deployments/kubernetes?submodules=false
 
 namespace: mq
 
