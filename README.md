@@ -1,4 +1,3 @@
-
 ### Fork this repo and adapt it for your environment
 
 First, fork this repo. Update the following files that refer to your repo url:
@@ -20,4 +19,12 @@ Config for installed components:
 
 * Create mqwebusersecret with password in mq namespace, example here: [mqwebuser-secret-example.yaml](./components/mq/base/native-ha-qm/mqwebuser-secret-example.yaml)
 
-* Create eventstreams-scram-auth secret in liberty using the created password for the admin user in the event streams namespace. The sample application uses [MicroProfile Config](https://openliberty.io/docs/latest/external-configuration.html) 
+* Create liberty-config secret in liberty using the created password for the admin user in the event streams namespace. The sample application uses [MicroProfile Config](https://openliberty.io/docs/latest/external-configuration.html)
+
+  Add these keys and values:
+
+  `MP_MESSAGING_CONNECTOR_LIBERTY_KAFKA_BOOTSTRAP_SERVERS` with value `SASL_SSL://eventstreams-kafka-external-bootstrap-eventstreams.apps.<INGRESS>:443`
+
+  `MP_MESSAGING_CONNECTOR_LIBERTY_KAFKA_SASL_JAAS_CONFIG` with value `org.apache.kafka.common.security.scram.ScramLoginModule required username="<USERNAME>" password="<PASSWORD>";`
+
+  `CONNECTION_NAME_LIST` with value `native-ha-qm-ibm-mq-qm-mq.apps.<INGRESS>(443)` for using MQ via OpenShift route, or for the service `native-ha-qm-ibm-mq.mq.svc.cluster.local(1414`
