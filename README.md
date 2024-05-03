@@ -19,7 +19,7 @@ Config for installed components:
 
 * Create mqwebusersecret with password in mq namespace, example here: [mqwebuser-secret-example.yaml](./components/mq/base/native-ha-qm/mqwebuser-secret-example.yaml)
 
-* Create liberty-config secret in liberty using the created password for the admin user in the event streams namespace. The sample application uses [MicroProfile Config](https://openliberty.io/docs/latest/external-configuration.html)
+* The sample application uses [MicroProfile Config](https://openliberty.io/docs/latest/external-configuration.html). Create liberty-config secret in liberty. 
 
   Add these keys and values:
 
