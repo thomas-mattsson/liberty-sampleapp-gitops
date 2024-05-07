@@ -1,5 +1,7 @@
 ### Fork this repo and adapt it for your environment
 
+Make sure you have a default block storage class. 
+
 First, fork this repo. Update the following files that refer to your repo url:
 
 - [kustomization.yaml](./argocd/kustomization.yaml)
