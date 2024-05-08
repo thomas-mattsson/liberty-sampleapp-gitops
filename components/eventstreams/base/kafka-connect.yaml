@@ -79,11 +79,11 @@ spec:
             group: org.apache.kafka
             version: "3.4.1"  
           - type: maven
-            artifact: javax.jms-api	
+            artifact: javax.jms-api
             group: javax.jms
             version: "2.0.1"  
           - type: maven
-            artifact: com.ibm.mq.allclient	
+            artifact: com.ibm.mq.allclient
             group: com.ibm.mq
             version: "9.3.3.1"  
           - type: maven
