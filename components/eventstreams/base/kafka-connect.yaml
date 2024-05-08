@@ -79,7 +79,7 @@ spec:
             group: org.apache.kafka
             version: "3.4.1"  
           - type: maven
-            artifact: "javax.jms-api"
+            artifact: "jms-api"
             group: "javax.jms"
             version: "2.0.1"  
           - type: maven
