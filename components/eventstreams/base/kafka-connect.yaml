@@ -62,3 +62,11 @@ spec:
         artifacts:
           - type: jar
             url: https://github.com/ibm-messaging/kafka-connect-mq-source/releases/download/v1.3.3/kafka-connect-mq-source-1.3.3-jar-with-dependencies.jar
+      - name: mq-source-v2
+          artifacts:
+          - type: jar
+            url: https://github.com/thomas-mattsson/liberty-sampleapp-gitops/raw/main/components/eventprocessing/base/kafka-connect-mq-source-2.0.0.jar
+          - type: maven
+            artifact: slf4j-api
+            group: org.slf4j
+            version: >= 2.0.7  
