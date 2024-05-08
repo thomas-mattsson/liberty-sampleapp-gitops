@@ -26,5 +26,6 @@ rules:
       - mq.ibm.com
       - eventstreams.ibm.com
       - events.ibm.com
+      - flink.apache.org
     resources:
       - '*'
