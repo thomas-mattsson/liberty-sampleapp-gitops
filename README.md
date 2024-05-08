@@ -11,6 +11,7 @@ Update the dnsNames for certificates with the correct ingress subdomain:
 
 - [mq-cert-domain.yaml](./components/mq/variants/cloudprovider/odf/mq-cert-domain.yaml)
 - [route-certificate-domain.yaml](./components/eventstreams/variants/cloudprovider/odf/route-certificate-domain.yaml)
+- [ep-route-certificate-domain.yaml](./components/eventprocessing/variants/cloudprovider/odf/ep-route-certificate-domain.yaml)
 
 Install ArgoCD and add applications:
 
