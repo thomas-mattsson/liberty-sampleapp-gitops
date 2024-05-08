@@ -41,7 +41,7 @@ spec:
     pod:
       metadata:
         annotations:        
-          productVersion: 11.3.1
+          productVersion: 11.3.2
           productID: 46c2d3697ae4406d9157c58de4b66dcc
           productChargedContainers: kafka-connect-connect
           productCloudpakRatio: '2:1'
