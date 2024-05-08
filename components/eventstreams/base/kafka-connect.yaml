@@ -90,7 +90,5 @@ spec:
             artifact: json
             group: org.json
             version: "20230618"
-          - type: maven
-            artifact: "javax.jms-api"
-            group: "javax.jms"
-            version: "2.0.1"
+          - type: jar
+            url: https://repo1.maven.org/maven2/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar
