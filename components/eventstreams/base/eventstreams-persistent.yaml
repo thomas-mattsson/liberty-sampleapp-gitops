@@ -41,6 +41,7 @@ spec:
         type: persistent-claim
         class: PATCHED_BY_KUSTOMIZE
         size: 10Gi
+        deleteClaim: true
       listeners:
         - name: plain
           port: 9093
@@ -71,6 +72,7 @@ spec:
         type: persistent-claim
         class: PATCHED_BY_KUSTOMIZE
         size: 10Gi
+        deleteClaim: true
       replicas: 1
   adminUI: 
     authentication:
