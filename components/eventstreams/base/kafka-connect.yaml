@@ -65,8 +65,8 @@ spec:
       - name: mq-source-v2
         artifacts:
           - type: jar
-            url: https://github.com/thomas-mattsson/liberty-sampleapp-gitops/raw/main/components/eventprocessing/base/kafka-connect-mq-source-2.0.0.jar
+            url: https://github.com/thomas-mattsson/liberty-sampleapp-gitops/raw/main/components/eventstreams/base/kafka-connect-mq-source-2.0.0.jar
           - type: maven
             artifact: slf4j-api
             group: org.slf4j
-            version: "2.0.7"  
+            version: ">=2.0.7"  
