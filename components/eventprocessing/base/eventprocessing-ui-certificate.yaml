@@ -1,0 +1,29 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: eventprocessing-ui-certificate
+spec:
+  secretTemplate:
+    annotations:
+      cert-utils-operator.redhat-cop.io/generate-cert-info: "true"
+      cert-utils-operator.redhat-cop.io/generate-java-keystores: "true"
+  secretName: eventprocessing-ui-certificate-secret
+  duration: 2160h0m0s # 90d
+  renewBefore: 360h0m0s # 15d
+  subject:
+    organizations:
+      - eventprocessing
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+  usages:
+    - key encipherment
+    - digital signature
+    - server auth
+    - client auth
+  dnsNames:
+    - PATCHED_BY_KUSTOMIZE
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer

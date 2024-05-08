@@ -5,4 +5,5 @@ resources:
   - instance.yaml
   - roles-secret.yaml
   - users-secret.yaml
+  - eventprocessing-ui-certificate.yaml
   

@@ -1,0 +1,7 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: eventprocessing-ui-certificate
+spec:
+  dnsNames:
+    - ibm-event-processing-ibm-ep-rt-eventprocessing.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com

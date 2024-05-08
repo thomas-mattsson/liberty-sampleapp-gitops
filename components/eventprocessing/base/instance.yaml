@@ -10,6 +10,12 @@ spec:
   flink:
     endpoint: ibm-flink-rest.cp4i.svc:8081
   authoring:
+    tls:
+      ui:
+        secretName: eventprocessing-ui-certificate-secret
+      trustedCertificates:
+        - secretName: letsencrypt-chain
+          certificate: ca.crt
     storage:
       type: persistent-claim
       storageClassName: PATCHED_BY_KUSTOMIZE
