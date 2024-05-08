@@ -70,3 +70,27 @@ spec:
             artifact: slf4j-api
             group: org.slf4j
             version: "2.0.7"  
+          - type: maven
+            artifact: connect-api
+            group: org.apache.kafka	
+            version: "3.4.1"  
+          - type: maven
+            artifact: connect-json
+            group: org.apache.kafka
+            version: "3.4.1"  
+          - type: maven
+            artifact: javax.jms-api	
+            group: javax.jms
+            version: "2.0.1"  
+          - type: maven
+            artifact: com.ibm.mq.allclient	
+            group: com.ibm.mq
+            version: "9.3.3.1"  
+          - type: maven
+            artifact: jackson-databind
+            group: com.fasterxml.jackson.core
+            version: "2.14.3"  
+          - type: maven
+            artifact: json
+            group: org.json
+            version: "20230618"  
