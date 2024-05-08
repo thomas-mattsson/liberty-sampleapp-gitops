@@ -69,4 +69,4 @@ spec:
           - type: maven
             artifact: slf4j-api
             group: org.slf4j
-            version: ">=2.0.7"  
+            version: "2.0.7"  
