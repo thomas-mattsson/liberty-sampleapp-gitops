@@ -17,6 +17,12 @@ spec:
         - name: eventstreams
           namespace: eventstreams
           sync-wave: "200"
+        - name: flink
+          namespace: eventprocessing
+          sync-wave: "200"
+        - name: eventprocessing
+          namespace: eventprocessing
+          sync-wave: "200"
         - name: reloader
           namespace: mq
           sync-wave: "200"
