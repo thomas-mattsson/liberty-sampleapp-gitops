@@ -8,7 +8,7 @@ spec:
     license: L-HRZF-DWHH7A
     use: EventAutomationNonProduction
   flink:
-    endpoint: ibm-flink-rest.cp4i.svc:8081
+    endpoint: ibm-flink-rest.eventprocessing.svc:8081
   authoring:
     tls:
       ui:
