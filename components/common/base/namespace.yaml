@@ -21,3 +21,11 @@ metadata:
   labels:
     clusterresourceoverrides.admission.autoscaling.openshift.io/enabled: "true"
 spec: {}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eventprocessing
+  labels:
+    clusterresourceoverrides.admission.autoscaling.openshift.io/enabled: "true"
+spec: {}

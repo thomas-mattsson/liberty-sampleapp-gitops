@@ -14,6 +14,10 @@ spec:
           namespace: mq
         - name: eventstreams
           namespace: eventstreams
+        - name: flink
+          namespace: eventprocessing
+        - name: eventprocessing
+          namespace: eventprocessing
         - name: openshift-logging
           namespace: openshift-logging
         - name: openshift-cert-manager
