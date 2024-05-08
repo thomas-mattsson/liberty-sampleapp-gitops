@@ -46,6 +46,15 @@ spec:
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'
+      ignoreDifferences:
+        - group: ''
+          kind: PersistentVolumeClaim
+          name: data-eventstreams-kafka-0
+          namespace: eventstreams
+        - group: ''
+          kind: PersistentVolumeClaim
+          name: data-eventstreams-zookeeper-0
+          namespace: eventstreams
       syncPolicy:
         automated:
           selfHeal: true
