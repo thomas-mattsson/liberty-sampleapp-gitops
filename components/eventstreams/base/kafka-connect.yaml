@@ -20,6 +20,7 @@ spec:
     offset.storage.topic: connect-cluster-offsets
     status.storage.replication.factor: 1
     status.storage.topic: connect-cluster-status
+    exactly.once.source.support: enabled
   replicas: 1
   resources:
     limits:
