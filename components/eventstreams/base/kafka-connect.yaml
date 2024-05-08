@@ -78,10 +78,8 @@ spec:
             artifact: connect-json
             group: org.apache.kafka
             version: "3.4.1"  
-          - type: maven
-            artifact: com%2Eibm%2Emq%2Eallclient
-            group: com.ibm.mq
-            version: "9.3.3.1"  
+          - type: jar
+            url: https://repo1.maven.org/maven2/com/ibm/mq/com.ibm.mq.allclient/9.3.3.1/com.ibm.mq.allclient-9.3.3.1.jar
           - type: maven
             artifact: jackson-databind
             group: com.fasterxml.jackson.core
