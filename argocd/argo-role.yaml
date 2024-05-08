@@ -23,9 +23,8 @@ rules:
       - apps
       - batch
       - ""
-
       - mq.ibm.com
-
       - eventstreams.ibm.com
+      - events.ibm.com
     resources:
       - '*'
