@@ -16,10 +16,3 @@ spec:
       server: '*'
   sourceRepos:
     - '*'
-  orphanedResources:
-    warn: true
-    #ignore:
-    #- kind: PersistentVolumeClaim
-    #  name: data-eventstreams-kafka-0
-    #- kind: PersistentVolumeClaim
-    #  name: data-eventstreams-zookeeper-0
