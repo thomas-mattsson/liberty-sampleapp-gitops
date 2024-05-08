@@ -17,6 +17,7 @@ spec:
   sourceRepos:
     - '*'
   orphanedResources:
+    warn: true
     ignore:
     - kind: PersistentVolumeClaim
       name: data-eventstreams-kafka-0
