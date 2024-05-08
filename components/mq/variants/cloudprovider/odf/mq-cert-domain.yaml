@@ -4,5 +4,5 @@ metadata:
   name: mq-server-certificate
 spec:
   dnsNames:
-    - 'native-ha-qm-ibm-mq-qm-mq.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com'
-    - 'native-ha-qm-ibm-mq-web-mq.apps.6602d6121b0194001e821256.cloud.techzone.ibm.com'
+    - 'native-ha-qm-ibm-mq-qm-mq.apps.6639dd1691acca001e043026.cloud.techzone.ibm.com'
+    - 'native-ha-qm-ibm-mq-web-mq.apps.6639dd1691acca001e043026.cloud.techzone.ibm.com'
